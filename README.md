@@ -36,7 +36,21 @@ This project implements an **autonomous drone security system** using an ESP32, 
 
 ## 📂 Project Structure (Tentative)
 
+## 🔌 Hardware Integration Test
 
+### ✅ Connected Components - 2025/07/01 DONE ✅ 
+- **ESP32 Dev Board**
+- **IR Sensor (HW-221)**
+  - Outputs HIGH on detection  
+    → OUT → ESP32 GPIO 18 (P18)  
+    → VCC → ESP32 3.3V  
+    → GND → ESP32 GND
+- **Ultrasonic Distance Sensor (HC-SR04)**
+  - Used to measure distance  
+    → VCC → ESP32 5V  
+    → GND → ESP32 GND  
+    → TRIG → ESP32 GPIO 5  
+    → ECHO → ESP32 GPIO 18 (or any other GPIO if needed)
 
 ---
 
